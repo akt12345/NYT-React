@@ -1,0 +1,32 @@
+body{
+    font-family: 'Old London Regular', serif;
+}
+
+h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+button{
+    margin: 10px
+    color: #DB3844;
+}
+.form-group{
+width: 50%;
+margin: 0 auto;
+}
+.panel-heading{
+   color: #000000;
+}
+#headline {
+    text-align: center;
+}
+#subhead {
+    text-align: center;
+}
+
+.nav-item{
+    font-family: 'Old London Regular', serif;
+}

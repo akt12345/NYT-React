@@ -1,16 +1,38 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "react-scripts": "1.1.2"
-  },
+  "name": "nyt-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akt12345/NYT-React.git"
+  },
+  "author": "Abby Thoresen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akt12345/NYT-React/issues"
+  },
+  "homepage": "https://github.com/akt12345/NYT-React#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "create-react-class": "^15.6.3",
+    "express": "^4.16.2",
+    "express-router": "0.0.1",
+    "mongoose": "^5.0.6",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
   }
 }
