@@ -8,7 +8,7 @@ const apiRoutes = require('./routes/apiRoutes');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/nytreact'
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://heroku_7h725jnv:oih54c2p3idfaafibhpg9qgsl1@ds241059.mlab.com:41059/heroku_7h725jnv'
 
 mongoose.Promise = global.Promise;
 mongoose.connect(MONGO_URI);
